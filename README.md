@@ -148,7 +148,7 @@ def convert(size, box):
 ![](./doc/File_tree.png)
 
 ### 1.4 聚类得出先验框（Yolov5 内部已做适配，可选）
-使用代码 `./data/gen_anchors/clauculate_anchors.py` ，修改数据集的路径
+使用代码 `./data/gen_anchors/calculate_anchors.py` ，修改数据集的路径
 ```python
 FILE_ROOT = r"xxx" # 根路径
 ANNOTATION_ROOT = r"xxx"  # 数据集标签文件夹路径
