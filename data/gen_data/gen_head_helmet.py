@@ -129,12 +129,12 @@ def copy_data(img_set_source, img_labels_root, imgs_source, type):
     file = open(file_name)
 
     # 判断文件夹是否存在，不存在则创建
-    root_file = Path(FILE_ROOT + DEST_IMAGES_PATH + '/' + type)
+    root_file = Path(DATA_ROOT + DEST_IMAGES_PATH + '/' + type)
     if not root_file.exists():
         print(f"Path {root_file} is not exit")
         os.makedirs(root_file)
 
-    root_file = Path(FILE_ROOT + DEST_LABELS_PATH + '/' + type)
+    root_file = Path(DATA_ROOT + DEST_LABELS_PATH + '/' + type)
     if not root_file.exists():
         print(f"Path {root_file} is not exit")
         os.makedirs(root_file)
