@@ -11,8 +11,10 @@ import numpy as np
 import xml.etree.cElementTree as et
 from data.gen_anchors.kmeans import kmeans, avg_iou
 
-FILE_ROOT = r"E:/AI_Project/AI_Learning/Dataset/"
-ANNOTATION_ROOT = r"Safety_Helmet_Person_dataset/Annotations"  # 数据集标签文件夹路径
+#FILE_ROOT = r"E:/AI_Project/AI_Learning/Dataset/"
+#ANNOTATION_ROOT = r"Safety_Helmet_Person_dataset/Annotations"  # 数据集标签文件夹路径
+FILE_ROOT = "/kaggle/input/voc2028/"
+ANNOTATION_ROOT = "VOC2028/Annotations"  # 数据集标签文件夹路径
 ANNOTATION_PATH = FILE_ROOT + ANNOTATION_ROOT
 
 ANCHORS_TXT_PATH = "./anchors.txt"
