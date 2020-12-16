@@ -22,9 +22,10 @@ ANNOTATIONS_PATH = FILE_ROOT + "VOC2028/Annotations"  # 数据集标签文件的
 LABELS_ROOT = DATA_ROOT + "VOC2028/Labels"  # 进行归一化之后的标签位置
 
 DATA_ROOT = "./Dataset/"
-DEST_IMAGES_PATH = "Safety_Helmet_Train_dataset/score/images"  # 区分训练集、测试集、验证集的图片目标路径
-DEST_LABELS_PATH = "Safety_Helmet_Train_dataset/score/labels"  # 区分训练集、测试集、验证集的标签文件目标路径
-
+#DEST_IMAGES_PATH = "Safety_Helmet_Train_dataset/score/images"  # 区分训练集、测试集、验证集的图片目标路径
+#DEST_LABELS_PATH = "Safety_Helmet_Train_dataset/score/labels"  # 区分训练集、测试集、验证集的标签文件目标路径
+DEST_IMAGES_PATH = "images"  # 区分训练集、测试集、验证集的图片目标路径
+DEST_LABELS_PATH = "labels"  # 区分训练集、测试集、验证集的标签文件目标路径
 
 def cord_converter(size, box):
     """
