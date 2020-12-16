@@ -13,6 +13,7 @@ from shutil import copyfile
 from PIL import Image, ImageDraw
 from xml.dom.minidom import parse
 import numpy as np
+os.path.join(os.getcwd())
 
 FILE_ROOT = "/kaggle/input/voc2028/"
 
