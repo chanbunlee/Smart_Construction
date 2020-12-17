@@ -13,8 +13,8 @@ import numpy as np
 
 import cv2
 
-AREA_DANGEROUS_FILE_ROOT = f"area_dangerous\\area_labels\\"  # 危险区域的标注文件的路径
-
+#AREA_DANGEROUS_FILE_ROOT = f"area_dangerous\\area_labels\\"  # 危险区域的标注文件的路径
+AREA_DANGEROUS_FILE_ROOT = "area_dangerous/area_labels/"  # 危险区域的标注文件的路径
 
 def load_poly_area_data(img_name):
     """
@@ -22,7 +22,7 @@ def load_poly_area_data(img_name):
     :param img_name: 图片名称
     :return: 多边形的坐标 [[x1,y1],[x2,y2],……,[xn,yn],[x1,y1]] 二维数组
     """
-    area_file_path = os.getcwd() + "\\" + AREA_DANGEROUS_FILE_ROOT
+    area_file_path = os.getcwd() + "/" + AREA_DANGEROUS_FILE_ROOT
     json_file_name = area_file_path + img_name.split('.')[0] + ".json"
 
     if not Path(json_file_name).exists():
