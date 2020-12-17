@@ -144,9 +144,7 @@ def copy_data(img_set_source, img_labels_root, imgs_source, type):
     for line in file.readlines():
         print(line)
         img_name = line.strip('\n')
-        img_sor_file = imgs_source + '/' + img_name + '.jpg'
-        if not os.path.isfile(img_sor_file):
-            img_sor_file = imgs_source + '/' + img_name + '.JPG'            
+        img_sor_file = imgs_source + '/' + img_name + '.jpg'          
         label_sor_file = img_labels_root + '/' + img_name + '.txt'
 
         # print(img_sor_file)
