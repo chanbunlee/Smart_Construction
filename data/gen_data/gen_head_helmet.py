@@ -162,7 +162,7 @@ def copy_data(img_set_source, img_labels_root, imgs_source, type):
 
         # Copy label
         DICT_DIR = DATA_ROOT + DEST_LABELS_PATH + '/' + type
-        img_dict_file = DICT_DIR + '\\' + img_name + '.txt'
+        img_dict_file = DICT_DIR + '/' + img_name + '.txt'
         copyfile(label_sor_file, img_dict_file)
 
 
