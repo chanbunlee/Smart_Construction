@@ -145,6 +145,7 @@ def copy_data(img_set_source, img_labels_root, imgs_source, type):
         print(line)
         img_name = line.strip('\n')
         img_sor_file = imgs_source + '/' + img_name + '.jpg'
+        if img_name=='000541':  img_sor_file = imgs_source + '/' + img_name + '.JPG'       
         label_sor_file = img_labels_root + '/' + img_name + '.txt'
 
         # print(img_sor_file)
@@ -155,6 +156,8 @@ def copy_data(img_set_source, img_labels_root, imgs_source, type):
         # Copy image
         DICT_DIR = DATA_ROOT + DEST_IMAGES_PATH + '/' + type
         img_dict_file = DICT_DIR + '/' + img_name + '.jpg'
+        if img_name=='000541':
+
         copyfile(img_sor_file, img_dict_file)
 
         # Copy label
