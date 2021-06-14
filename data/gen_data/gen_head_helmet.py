@@ -15,7 +15,7 @@ from xml.dom.minidom import parse
 import numpy as np
 os.path.join(os.getcwd())
 
-FILE_ROOT = "/kaggle/input/voc2028/"
+FILE_ROOT = "/content/drive/My Drive/colab"
 
 IMAGE_SET_ROOT = FILE_ROOT + "VOC2028/ImageSets/Main"  # 图片区分文件的路径
 IMAGE_PATH = FILE_ROOT + "VOC2028/JPEGImages"  # 图片的位置
